@@ -1,0 +1,71 @@
+:root {
+  --hazec: #476ad4;
+  --magnac: #ffbf99;
+  --asterc: #ff99a6;
+  --facec: #00aa80;
+  --heartc: #aa0040;
+  --soulc: #604e4e;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+@font-face {
+  font-family: "empire";
+  src: url("fonts/Empire.ttf") format("truetype");
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.titletxt {
+  font-size: 60pt;
+  font-family: empire;
+  margin-bottom: 36pt;
+  margin-top: 0;
+  text-align: center;
+}
+
+.image {
+  opacity: 0;
+}
+
+.par {
+  text-indent: 30px;
+  text-align: justify;
+  opacity: 0;
+}
+
+.par.p1 {
+  margin-bottom: 12pt;
+}
+
+.par.p2 {
+  margin-bottom: 48pt;
+}
+
+.spectext {
+  color: white;
+}
+
+.spectext.haze {
+  color: var(--hazec);
+}
+.spectext.magna {
+  color: var(--magnac);
+}
+.spectext.aster {
+  color: var(--asterc);
+}
+.spectext.face {
+  color: var(--facec);
+}
+.spectext.heart {
+  color: var(--heartc);
+}
+.spectext.soul {
+  color: var(--soulc);
+}
