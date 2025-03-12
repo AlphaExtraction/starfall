@@ -63,7 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (curURL.search("#") < 0) {
       let scrollInterval = window.setInterval(() => window.scroll(0, 0), 50);
       setTimeout(() => clearInterval(scrollInterval), 1500);
-      window.location.hash = "#home";
 
       titleTxt.style.fontSize = "150pt";
       titleTxt.style.margin = "450px auto";
@@ -118,6 +117,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  window.history.replaceState(undefined, "", "./");
+  window.location.hash = "#home";
   window.addEventListener("beforeunload", () => {
     document.body.animate(
       { opacity: 0 },
