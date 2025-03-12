@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       document.body.style.pointerEvents = "none";
       setTimeout(() => {
-        window.location.href = `/#home`;
+        window.location.href = `../#home`;
       }, 400);
     });
   }
