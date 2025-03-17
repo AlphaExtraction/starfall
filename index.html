@@ -7,7 +7,7 @@
   />
   <link rel="icon" href="images/asteria.png" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="animatehome.js"></script>
+  <script src="scripts/index.js"></script>
 </head>
 
 <style>
@@ -25,11 +25,12 @@
       color: #fff;
       padding: 120px 120px 120px 120px;
       font-family: cambria;
-      font-size: 15pt;
+      font-size: 16pt;
       line-height: 150%;
       background-color: #0100;
     "
   >
+    <!-- LOGO -->
     <p
       class="titletxt"
       style="
@@ -71,6 +72,8 @@
       width="768"
       height="768"
     />
+
+    <!-- PAGE LIST -->
     <div class="mainsec">
       <p
         style="
@@ -78,80 +81,125 @@
           text-align: center;
           font-size: 40pt;
           color: fff;
-          padding-top: 300px;
+          padding-top: 250px;
         "
       >
-        <b>Locations</b>
+        <b></b>
       </p>
-      <div style="text-align: center; width: 75%; margin: 0 auto">
-        <div
+      <div style="text-align: center; margin: 0 auto">
+        <a
+          href="haze.html"
           width="210px"
           style="
             display: inline-block;
+            text-decoration: none;
+            color: inherit;
             text-align: center;
             font-size: 24pt;
-            margin: 0 10px 25px 10px;
+            margin: 0 50px 25px 50px;
           "
         >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          class="divclick"
-          id="haze"
-          width="210px"
-          style="
-            display: inline-block;
-            cursor: pointer;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/haze.webp"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
           <b style="color: 476ad4">The Haze</b>
+          <img
+            src="images/hazeCityIcon.png"
+            width="210px"
+            height="210px"
+            style="
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 15px;
+            "
+          />
+        </a>
+      </div>
+    </div>
+    <div class="mainsec">
+      <p
+        style="
+          font-family: serif;
+          text-align: center;
+          font-size: 30pt;
+          color: fff;
+        "
+      >
+        <b></b>
+      </p>
+      <div style="text-align: center; margin: 0 auto">
+        <div
+          class="divclickx"
+          id="mira"
+          width="210px"
+          style="
+            display: inline-block;
+            cursor: auto;
+            text-align: center;
+            font-size: 24pt;
+            margin: 0 50px 25px 50px;
+          "
+        >
+          <b style="color: #00aa80">The Faceless</b>
+          <img
+            src="images/unknown.png"
+            width="210px"
+            height="210px"
+            style="
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 15px;
+            "
+          />
+        </div>
+        <div
+          class="divclickx"
+          id="mira"
+          width="210px"
+          style="
+            display: inline-block;
+            cursor: auto;
+            text-align: center;
+            font-size: 24pt;
+            margin: 0 50px 25px 50px;
+          "
+        >
+          <b style="color: #aa0040">The Heartless</b>
+          <img
+            src="images/unknown.png"
+            width="210px"
+            height="210px"
+            style="
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 15px;
+            "
+          />
+        </div>
+        <div
+          class="divclickx"
+          id="the_faceless"
+          width="210px"
+          style="
+            display: inline-block;
+            cursor: auto;
+            text-align: center;
+            font-size: 24pt;
+            margin: 0 50px 25px 50px;
+          "
+        >
+          <b style="color: #604e4e">The Soulless</b>
+          <img
+            src="images/unknown.png"
+            width="210px"
+            height="210px"
+            style="
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 15px;
+            "
+          />
         </div>
       </div>
     </div>
@@ -160,23 +208,24 @@
         style="
           font-family: serif;
           text-align: center;
-          font-size: 40pt;
-          color: 00aa80;
-          padding-top: 50px;
+          font-size: 30pt;
+          color: fff;
         "
       >
-        <b>Faceless</b>
+        <b></b>
       </p>
-      <div style="text-align: center; width: 75%; margin: 0 auto">
+      <div style="text-align: center; margin: 0 auto">
         <div
           width="210px"
           style="
             display: inline-block;
+            cursor: auto;
             text-align: center;
             font-size: 24pt;
-            margin: 0 10px 25px 10px;
+            margin: 0 50px 25px 50px;
           "
         >
+          <b style="color: #30bf54">MIRA</b>
           <img
             src="images/unknown.png"
             width="210px"
@@ -185,20 +234,23 @@
               display: block;
               margin-left: auto;
               margin-right: auto;
-              margin-bottom: 15px;
+              margin-top: 15px;
             "
           />
-          ?
         </div>
         <div
+          class="divclickx"
+          id="witnesses"
           width="210px"
           style="
             display: inline-block;
+            cursor: auto;
             text-align: center;
             font-size: 24pt;
-            margin: 0 10px 25px 10px;
+            margin: 0 50px 25px 50px;
           "
         >
+          <b style="color: D4C347">Witnesses</b>
           <img
             src="images/unknown.png"
             width="210px"
@@ -207,304 +259,9 @@
               display: block;
               margin-left: auto;
               margin-right: auto;
-              margin-bottom: 15px;
+              margin-top: 15px;
             "
           />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-      </div>
-    </div>
-    <div class="mainsec">
-      <p
-        style="
-          font-family: serif;
-          text-align: center;
-          font-size: 40pt;
-          color: aa0040;
-          padding-top: 50px;
-        "
-      >
-        <b>Heartless</b>
-      </p>
-      <div style="text-align: center; width: 75%; margin: 0 auto">
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-      </div>
-    </div>
-    <div class="mainsec">
-      <p
-        style="
-          font-family: serif;
-          text-align: center;
-          font-size: 40pt;
-          color: #604e4e;
-          padding-top: 50px;
-        "
-      >
-        <b>Soulless</b>
-      </p>
-      <div style="text-align: center; width: 75%; margin: 0 auto">
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
-        </div>
-        <div
-          width="210px"
-          style="
-            display: inline-block;
-            text-align: center;
-            font-size: 24pt;
-            margin: 0 10px 25px 10px;
-          "
-        >
-          <img
-            src="images/unknown.png"
-            width="210px"
-            height="210px"
-            style="
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              margin-bottom: 15px;
-            "
-          />
-          ?
         </div>
       </div>
     </div>

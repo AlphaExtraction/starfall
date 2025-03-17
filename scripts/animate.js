@@ -56,13 +56,13 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  window.addEventListener("beforeunload", () => {
+  /* window.addEventListener("beforeunload", () => {
     document.body.animate(
       { opacity: 0 },
       { duration: 188, easing: "linear", fill: "forwards" }
     );
     document.body.style.pointerEvents = "none";
-  });
+  }); */
 
   if (titleTxt != undefined) titleTxt.opacity = 1;
   document.body.animate(
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   }
 
-  for (var i = 0; i < specLen; i++) {
+  /*for (var i = 0; i < specLen; i++) {
     let txt = specText[i];
     txt.style.color = "white";
     let tCol = cols[txt.classList[1]];
@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: (animLen * i) / specLen,
       }
     );
-  }
+  }*/
 
   for (var i = 0; i < backs.length; i++) {
     let clicky = backs[i];

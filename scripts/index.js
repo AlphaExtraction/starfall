@@ -117,15 +117,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  window.history.replaceState(undefined, "", "./");
+  window.history.replaceState(undefined, "", "index");
   window.location.hash = "#home";
-  window.addEventListener("beforeunload", () => {
+  /* window.addEventListener("beforeunload", () => {
     document.body.animate(
       { opacity: 0 },
       { duration: 188, easing: "linear", fill: "forwards" }
     );
     document.body.style.pointerEvents = "none";
-  });
+  }); */
 
   for (var i = 0; i < clix.length; i++) {
     let clicky = clix[i];
