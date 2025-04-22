@@ -38,7 +38,7 @@ function sleep(time) {
 
 document.addEventListener("DOMContentLoaded", function () {
   const txtCol = document.getElementsByClassName("spectext");
-  const parCol = document.getElementsByClassName("par");
+  const parCol = document.getElementsByClassName("ele");
   const imgCol = document.getElementsByClassName("image");
   const titleTxt = document.getElementById("titletxt");
   const backs = document.getElementsByClassName("backbutton");
@@ -47,13 +47,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let specLen = specText.length;
   let pathname = window.location.pathname;
 
-  const pathsearch = pathname.search(".html");
-  if (pathsearch >= 0) {
-    window.history.replaceState(
-      undefined,
-      "",
-      pathname.substring(0, pathsearch)
-    );
+  if (
+    !(location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  ) {
+    const pathsearch = pathname.search(".html");
+    if (pathsearch >= 0) {
+      window.history.replaceState(
+        undefined,
+        "",
+        pathname.substring(0, pathsearch)
+      );
+    }
   }
 
   /* window.addEventListener("beforeunload", () => {

@@ -1,10 +1,21 @@
 :root {
   --hazec: #476ad4;
-  --magnac: #ffbf99;
-  --asterc: #ff99a6;
+  --magnac: #ff8f4c;
+  --asterc: #ff4c4c;
   --facec: #00aa80;
   --heartc: #aa0040;
   --soulc: #604e4e;
+  --witc: #d4c347;
+  --mirac: #30bf54;
+
+  --hazec2: #9cafea;
+  --magnac2: #ffc7a6;
+  --asterc2: #ffa6a6;
+  --facec2: #6ad4ba;
+  --heartc2: #d46a92;
+  --soulc2: #af9f9f;
+  --witc2: #eae09c;
+  --mirac2: #8bdfa0;
 }
 
 html {
@@ -33,39 +44,73 @@ html {
   opacity: 0;
 }
 
-.par {
-  text-indent: 30px;
+.ele {
+  opacity: 0;
+}
+.ele.par {
+  text-indent: 50px;
   text-align: justify;
   opacity: 0;
 }
 
-.par.p1 {
+.ele.par.p1 {
   margin-bottom: 12pt;
 }
 
-.par.p2 {
+.ele.par.p2 {
   margin-bottom: 48pt;
 }
 
-.spectext {
+.stx {
   color: white;
 }
 
-.spectext.haze {
+.stx.haze {
   color: var(--hazec);
 }
-.spectext.magna {
+.stx.magna {
   color: var(--magnac);
 }
-.spectext.aster {
+.stx.aster {
   color: var(--asterc);
 }
-.spectext.face {
+.stx.face {
   color: var(--facec);
 }
-.spectext.heart {
+.stx.heart {
   color: var(--heartc);
 }
-.spectext.soul {
+.stx.soul {
   color: var(--soulc);
+}
+.stx.wit {
+  color: var(--witc);
+}
+.stx.mira {
+  color: var(--mirac);
+}
+
+.stx.haze2 {
+  color: var(--hazec2);
+}
+.stx.magna2 {
+  color: var(--magnac2);
+}
+.stx.aster2 {
+  color: var(--asterc2);
+}
+.stx.face2 {
+  color: var(--facec2);
+}
+.stx.heart2 {
+  color: var(--heartc2);
+}
+.stx.soul2 {
+  color: var(--soulc2);
+}
+.stx.wit2 {
+  color: var(--witc2);
+}
+.stx.mira2 {
+  color: var(--mirac2);
 }

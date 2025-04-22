@@ -117,7 +117,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  window.history.replaceState(undefined, "", "index");
+  if (
+    !(location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  ) {
+    window.history.replaceState(undefined, "", "index");
+  } else {
+    window.history.replaceState(undefined, "", "index.html");
+  }
   window.location.hash = "#home";
   /* window.addEventListener("beforeunload", () => {
     document.body.animate(
