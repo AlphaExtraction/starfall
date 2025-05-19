@@ -16,7 +16,7 @@ function getCookie(cname) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  if (getCookie("Resurrected1").localeCompare("Yes") == 0 || true) {
+  if (getCookie("Resurrected1").localeCompare("Yes") == 0) {
     document.body.animate(
       { opacity: [0, 1] },
       { duration: 1500, fill: "forwards", easing: "linear" }

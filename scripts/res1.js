@@ -15,6 +15,7 @@ function getCookie(cname) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+  let pathname = window.location.pathname;
   if (
     !(location.hostname === "localhost" || location.hostname === "127.0.0.1")
   ) {
