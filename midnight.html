@@ -1,11 +1,11 @@
 <head>
-  <title>Resurrection One</title>
-  <meta name="description" content="The Devil lives" />
+  <title>Midnight</title>
+  <meta name="description" content="The Clock" />
   <link rel="icon" href="images/arise.png" />
-  <script src="scripts/r1.js"></script>
+  <script src="scripts/res1.js"></script>
 </head>
 
-<body style="background-color: #000">
+<body style="background-color: #000; opacity: 0">
   <div
     style="
       display: block;
@@ -27,38 +27,6 @@
     <div style="width: 100%; text-align: center; position: relative">
       <div style="position: absolute; width: 100%; height: 100%">
         <svg viewBox="0 0 100 100">
-          <circle r="50%" cx="50%" cy="50%" fill="white" />
-        </svg>
-      </div>
-      <div
-        style="
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          mix-blend-mode: difference;
-        "
-      >
-        <img src="images/clockHand1.png" width="100%" />
-      </div>
-      <div
-        style="
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          mix-blend-mode: difference;
-        "
-      >
-        <img src="images/clockHand2.png" width="100%" />
-      </div>
-      <div
-        style="
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          mix-blend-mode: multiply;
-        "
-      >
-        <svg viewBox="0 0 100 100">
           <circle r="50%" cx="50%" cy="50%" fill="black" id="c1" />
           <circle r="45%" cx="50%" cy="50%" fill="white" id="c2" />
           <circle r="40%" cx="50%" cy="50%" fill="black" id="c3" />
@@ -74,7 +42,37 @@
         </svg>
       </div>
       <div style="position: absolute; width: 100%; height: 100%">
+        <img src="images/clockHand1.png" width="100%" id="hand1" />
+      </div>
+      <div style="position: absolute; width: 100%; height: 100%">
+        <img src="images/clockHand2.png" width="100%" id="hand2" />
+      </div>
+      <div style="position: absolute; width: 100%; height: 100%; opacity: 0">
+        <img
+          src="images/clockHand2.png"
+          width="100%"
+          style="transform: rotate(45deg)"
+        />
+      </div>
+      <div style="position: absolute; width: 100%; height: 100%">
         <img src="images/vignette.webp" width="100%" />
+      </div>
+      <div style="position: absolute; width: 100%; height: 100%">
+        <svg viewBox="0 0 100 100">
+          <circle r="0%" cx="50%" cy="50%" fill="black" id="cD" />
+        </svg>
+      </div>
+      <div
+        style="
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          mix-blend-mode: multiply;
+        "
+      >
+        <svg viewBox="0 0 100 100">
+          <circle r="50%" cx="50%" cy="50%" fill="#20FF0000" />
+        </svg>
       </div>
     </div>
   </div>
