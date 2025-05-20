@@ -57,7 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function repeater(times, ob1, ob2) {
     let animList = ob1.getAnimations();
-    if (animList[animList.length - 1].currentTime >= tTime) {
+    if (
+      animList[animList.length - 1] == null ||
+      animList[animList.length - 1].currentTime >= tTime
+    ) {
       times = 0;
       curText = (curText + 1) % 14;
       if (curText == 0) {

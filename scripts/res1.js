@@ -127,7 +127,10 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   function repeater(times) {
-    if (cD.getAnimations()[0].currentTime > 4999) {
+    if (
+      cD.getAnimations()[0] == null ||
+      cD.getAnimations()[0].currentTime > 4999
+    ) {
       const curDate = new Date();
       curDate.setTime(curDate.getTime() + 300000);
       document.cookie = `Resurrected1=Yes; expires=${curDate.toUTCString()}`;
