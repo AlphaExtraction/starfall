@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const curDate = new Date();
       curDate.setTime(curDate.getTime() + 300000);
       document.cookie = `Resurrected1=Yes; expires=${curDate.toUTCString()}`;
-      document.location.href = "tolot_rebirth.html";
+      document.location.href = "tolot_awake.html";
       times = 0;
     }
     if (times > 0) {
