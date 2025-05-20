@@ -1,4 +1,3 @@
-window.history.replaceState(undefined, "", "tolot_rebirth");
 function getCookie(cname) {
   let name = cname + "=";
   let decodedCookie = decodeURIComponent(document.cookie);
@@ -21,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       { opacity: [0, 1] },
       { duration: 1500, fill: "forwards", easing: "linear" }
     );
+    window.history.replaceState(undefined, "", "tolot_rebirth");
   } else {
     document.location.href = "midnight.html";
   }
