@@ -20,7 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
       { opacity: [0, 1] },
       { duration: 1500, fill: "forwards", easing: "linear" }
     );
-    window.history.replaceState(undefined, "", "tolot_rebirth");
+    let pathname = window.location.pathname;
+    if (
+      !(location.hostname === "localhost" || location.hostname === "127.0.0.1")
+    ) {
+      const pathsearch = pathname.search(".html");
+      if (pathsearch >= 0) {
+        window.history.replaceState(
+          undefined,
+          "",
+          pathname.substring(0, pathsearch)
+        );
+      }
+    }
   } else {
     document.location.href = "midnight.html";
   }
